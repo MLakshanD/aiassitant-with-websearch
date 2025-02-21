@@ -133,7 +133,7 @@ export async function POST(req: Request) {
 
     // Call Together API with retries
     const payload = {
-      model: 'deepseek-ai/DeepSeek-V3',
+      model: 'deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free',
       messages: messages.map(msg => ({
         role: msg.role,
         content: sanitizeContent(msg.content) // Sanitize all messages before sending
